@@ -1,3 +1,7 @@
+:root {
+    --heading-height: auto;
+    --heading-text-align: center;
+}
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -12,11 +16,12 @@ h1 {
 }
  main img {
     width: 150px;
-    height: auto;
+    height: var(--heading-height);
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+/* still trying to comment */
 p {padding: 0;}
 main {
     max-width: 840px;
@@ -28,7 +33,7 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--heading-text-align);
 }
 aside img {
     width: 200px;
@@ -37,5 +42,5 @@ aside img {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: var(--heading-text-align);
 }
