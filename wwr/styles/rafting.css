@@ -11,8 +11,64 @@
     font-family: 'Robot', sans-serif;
 }
 
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
 
+.logo-box img {
+    margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
 
+.navigation li {
+	flex: 1 1 auto;
+}
+
+.history h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.history-p {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.history-p img {
+    width: 400px;
+    height: 400px;
+}
+
+.adventure h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.adventureimg {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.adventureimg img {
+    width: 300px;
+    height: 300px;
+}
 .hero {
     position: relative;
 }
@@ -46,7 +102,6 @@ article {
     top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: skyblue; */
     padding: 20px;
     border-radius: 10px;
     color: var(--accent2-color);
@@ -79,11 +134,17 @@ a {
     text-decoration: none;
 }
 
-footer {
-    display: flex;
+footer nav {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr ;
     background-color: var(--secondary-color);
     justify-content: center;
     align-items: center;
     padding: 20px;
-    position: relative;
+}
+
+footer nav a {
+    display: flex;
+    justify-content: flex-end;
+    
 }
