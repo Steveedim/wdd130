@@ -71,10 +71,10 @@ header {
 }
 .hero {
     position: relative;
+    display: block; 
 }
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
 }
@@ -93,10 +93,10 @@ header {
     
 }
 
-article {
+.article {
     display: flex;
     position: absolute;
-    width: 60%;
+    /* width: 60%; */
     align-items: center;
     justify-content: center;
     top: 38%;
@@ -107,15 +107,15 @@ article {
     color: var(--accent2-color);
 }
 
-.hero article img {
+.article img {
     width: 100px;
-    float: left;
     margin: 0 0 0 5px;
-
+    float: right;
 }
 
+
 h2 {
-    color: #D5BDAF;
+    color: black;
 }
 
 h6 {
@@ -124,6 +124,7 @@ h6 {
 
 article p {
     color: var(--accent1-color);
+    font-size: large;
 }
 
 p {
@@ -134,17 +135,83 @@ a {
     text-decoration: none;
 }
 
-footer nav {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr ;
+.knowmore {
+    display: flex;
+    background-color: gray;
+    margin: 20px;
+}
+
+.knowmore img {
+    float: right;
+    width: 300px;
+}
+
+.parent-profile {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ccc;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.company-info {
+    justify-content: space-between;
+}
+footer {
+    display: flex;
     background-color: var(--secondary-color);
     justify-content: center;
     align-items: center;
     padding: 20px;
+    position: relative;
+}
+.sociallink {
+    position: absolute;
+    left: 90%;
+}
+.sociallink img {
+    width: 20px;
+}
+.sociallink a {
+    text-decoration: none;
+    margin-left: auto;
+}
+.contact-form h2 {
+    display: flex;
+    justify-content: center;
 }
 
-footer nav a {
+.contact {
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: space-around;
+}
+
+.purpose {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    background-color: gray; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+  
+button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
 }
