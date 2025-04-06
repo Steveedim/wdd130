@@ -66,7 +66,7 @@
                     <fieldset>
                         <legend>Contact Information</legend>
                         <label for="username">Username</label>
-                        <input type="text" id="username" name="username">
+                        <input name="username" type="text" id="username" name="username">
                         <label for="useremail">Email:</label>
                         <input type="email" id="useremail" name="useremail">
                     </fieldset>
@@ -75,13 +75,13 @@
                     <div class="purpose">
                     <p>Purpose of the Message</p>
                     <label for="general-inquiry">
-                        <input type="radio" id="general-inquiry">General Inquiry
+                        <input name="general-inquiry" type="radio" id="general-inquiry">General Inquiry
                     </label>
                     <label for="reservation-question">
-                        <input type="radio" id="reservation-question">Reservation Question 
+                        <input name="reserve-question" type="radio" id="reservation-question">Reservation Question 
                     </label>
                     <label for="website-suggestion">
-                        <input type="radio" id="website-suggestion">Website Suggestion 
+                        <input type="radio" id="website-suggestion" name="radio">Website Suggestion 
                     </label>
                     </div>
                 </fieldset>
@@ -90,7 +90,7 @@
                     <textarea name="message" id="message" rows="4" placeholder="Enter your message"></textarea>
                 </fieldset>
                 <label for="subscribe">
-                    <input type="checkbox" id="subscribe">Please subscribe me to the monthly newsletter
+                    <input type="checkbox" id="subscribe" name="checkbox">Please subscribe me to the monthly newsletter
                 </label>
                 <br>
                 <button type="submit">Send Message</button>
