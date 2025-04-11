@@ -5,6 +5,19 @@
     --accent2-color: #F5EBE0;
 }
 
+/* edited */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 * {
     margin: 0px;
     flex-shrink: 0;
@@ -16,6 +29,7 @@ header {
 	display: grid;
 	grid-template-columns: 120px 1fr 1fr;
 	align-items: center;
+    justify-content: space-between;
 	border-bottom: 1px solid #ccc;
 	max-width: 1000px;
 }
@@ -131,10 +145,6 @@ p {
     color: black;
 }
 
-a {
-    text-decoration: none;
-}
-
 .knowmore {
     display: flex;
     background-color: gray;
@@ -220,3 +230,4 @@ button:hover {
     background-color: #04AA6D; /* Green */
     color: white;
 }
+
